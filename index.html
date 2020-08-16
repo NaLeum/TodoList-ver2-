@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="NaLeum">
+    <meta name="description" content="What To Do">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="./assets/js/clock.js" defer></script>
+    <script src="./assets/js/greeting.js" defer></script>
+    <script src="./assets/js/weather.js" defer></script>
+    <script src="./assets/js/bg.js" defer></script>
+    <script src="./assets/js/todo.js" defer></script>
+    
+    
+    
+    
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <div class = "logo">NaLeum</div>
+        <span class = "weather"></span>
+    </header>
+
+<!-- Main -->
+    <section class="inner">
+        <div class="clock">
+            <h1>00:00:00</h1>
+        </div>
+
+        <form class="greetingForm form">
+            <input class = "name__input"type="text" placeholder="What is your name?">
+        </form>
+        <h2 class = "greeting">Hello ---</h2>
+
+        <div>
+            <form class = "toDoForm">
+                <input type="text" placeholder="Write A To Do" >
+            </form>
+        </div>
+
+        <div class = "lists">
+            <div class="toDoListBox">
+                <p>To Do List</p>
+                 <ul class="toDoList"></ul>       
+            </div>
+            <div class="doneListBox">
+                <p>Done List</p>                    
+                <ul class="doneList"></ul>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
