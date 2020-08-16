@@ -1,0 +1,154 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height:100%;
+    overflow:hidden;
+}
+/* HEADER */
+header .logo {
+    margin: 50px;
+    font-size: 30px;
+}
+header .weather {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+}
+
+/* Main */
+.inner {
+  margin: 100px;
+  margin-bottom: 0;
+  height: 70vh;
+  border: 3px solid #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  overflow:hidden;
+
+}
+
+.inner .clock {
+    margin: 1em auto;
+    font-size: 5em;
+}
+
+.inner input {
+    margin: 1em;
+    background: none;
+    border: none;
+    color : rgba(0,0,0,0.75);
+    font-size: 22px;
+    border-bottom: 2px solid white;    
+}
+
+.inner input:focus ,
+.inner input:active{
+    outline: none;
+}
+
+.inner input::placeholder {
+    color: rgba(0,0,0,0.75);
+}
+
+.inner h2{
+    font-size: 30px;
+}
+
+.form,
+.greeting {
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+.inner .lists{
+    width: 100%;
+    display: flex;
+}
+.inner .lists .toDoListBox,
+.inner .lists .doneListBox{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inner .lists ul{
+    margin: 0;
+}
+
+
+.inner .lists p {
+    font-size: 30px;
+}
+.inner .lists ul li{
+    margin-top: 5px;
+}
+
+.inner .lists ul span{
+}
+.inner .lists ul button {
+    background: none;
+    border: 0;
+    padding: 0 3px;
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.8;
+    }
+}
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    animation: fadeIn 0.5s linear;
+    background-size: cover;
+}
+
+@media (max-width:768px) {
+    .inner {
+        margin: 20px;
+        height: 70vh;
+        border: 3px solid #333;
+        box-shadow: 0 0 5px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      header .logo {
+        margin: 30px;
+        font-size: 22px;
+    }
+      header .weather {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 22px;
+    }
+    .inner .clock {
+        margin: 1em auto;
+        font-size: 3em;
+    }
+    .inner .lists ul {
+        margin: 0;
+    }
+    .inner .lists ul p {
+        font-size: 24px;
+        border-bottom: 2px solid white;
+    }
+}
